@@ -2,10 +2,10 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
-import About from "./components/about";
-import Education from "./components/education";
-import Projects from "./components/project";
-import Contact from "./components/contact";
+import About from "./components/About";
+import Education from "./components/Education";
+import Projects from "./components/Project";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/" element={<About />} />
+        <Route path="/about" element={<About />} />
         <Route path="/education" element={<Education />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
