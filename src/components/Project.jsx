@@ -1,26 +1,23 @@
-export default function Education() {
-  const education = [
+export default function Projects() {
+  const projects = [
     {
-      title: "BCA Data Science",
-      place: "SRM Institute of Science and Technology",
-      year: "2022 - 2025",
+      name: "Medical Diagnosis App",
+      description: "Flask + SVM classifier for disease prediction.",
     },
     {
-      title: "Higher Secondary",
-      place: "Kerala State Board",
-      year: "2020 - 2022",
+      name: "Heart Disease Analysis",
+      description: "EDA and visualization using Python.",
     },
   ];
 
   return (
-    <section className="min-h-screen bg-gray-50 px-6 py-12">
-      <h1 className="text-4xl font-bold text-center text-gray-800 mb-10">Education</h1>
-      <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-        {education.map((edu, i) => (
-          <div key={i} className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-            <h2 className="text-2xl font-semibold text-blue-500">{edu.title}</h2>
-            <p className="text-gray-700">{edu.place}</p>
-            <span className="text-gray-500">{edu.year}</span>
+    <section className="min-h-screen bg-gray-100 px-6 py-12">
+      <h1 className="text-4xl font-bold text-center text-gray-800 mb-10">Projects</h1>
+      <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+        {projects.map((project, i) => (
+          <div key={i} className="bg-white rounded-xl shadow-md hover:shadow-xl transition p-6">
+            <h2 className="text-2xl font-semibold text-blue-600">{project.name}</h2>
+            <p className="text-gray-600 mt-2">{project.description}</p>
           </div>
         ))}
       </div>
